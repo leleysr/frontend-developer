@@ -1,0 +1,139 @@
+.footer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.footer-newsletter-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-links-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #000000;
+  padding: 32px 16px;
+}
+
+.footer-links-contact-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-links-contact-email,
+.footer-links-contact-call-us {
+  display: flex;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  max-width: 195px;
+  min-height: 44.75px;
+  box-sizing: border-box;
+}
+
+.footer-links-contact-email-link,
+.footer-links-contact-call-us-link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 16px;
+}
+
+.footer-links-contact-email-label,
+.footer-links-contact-call-us-label {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.37px;
+  margin: 0;
+  color: #000000;
+}
+
+.footer-address-container {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-address-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.footer-address-title {
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-address-title::after {
+  content: "";
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.footer-address {
+  margin: 0;
+}
+
+.footer-address,
+.footer-address-email,
+.footer-address-telephone {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.footer-created-by-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1248px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.footer-created-by-label {
+  font-family: "Nunito";
+  font-size: 10.6px;
+  font-weight: 400;
+  line-height: 14.46px;
+  text-align: center;
+  color: #ffffff;
+  margin: 6px 0 0;
+}
+
+.footer-created-by-image {
+  width: 100%;
+  height: auto;
+  max-width: 76px;
+}

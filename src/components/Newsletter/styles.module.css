@@ -1,0 +1,89 @@
+.newsletter-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 12px 36px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.newsletter-title-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.newsletter-title {
+  font-family: "Lato";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+.newsletter-form-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-form {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.newsletter-input-wrapper {
+  position: relative;
+}
+
+.newsletter-input-wrapper input {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  padding: 17px 16px;
+  outline: none;
+  min-width: 280px;
+}
+
+.newsletter-invalid-feedback {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  color: #e74c3c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.newsletter-submit-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  padding: 8px;
+  width: 140px;
+  height: 48px;
+}

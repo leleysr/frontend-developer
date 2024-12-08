@@ -1,3 +1,107 @@
-.teste {
-  color: red;
+.header {
+  width: 100%;
+  height: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  background-color: #ffffff;
+  padding: 16px 0;
+}
+
+.header-logo {
+  width: 100%;
+  height: auto;
+  max-width: 181px;
+}
+
+.header-search-bar-wrapper {
+  width: 100%;
+  max-width: 718px;
+  height: 100%;
+  position: relative;
+}
+
+.header-search-bar-wrapper::after {
+  content: url("../../assets/search-icon.svg");
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+.header-search-bar {
+  width: 100%;
+  max-width: 718px;
+
+  font-family: "Nunito";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.73px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #7a7a7a;
+  outline: none;
+  color: #7a7a7a;
+  padding-right: 24px;
+}
+
+.header-user-actions-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
+
+.header-minicart-wrapper,
+.header-profile-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header-profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.header-profile-label {
+  margin: 0;
+
+  font-family: "Nunito";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.73px;
+  text-align: left;
+  color: #7a7a7a;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.header-profile-image,
+.header-minicart-image {
+  width: 18px;
+  height: 18px;
+}
+
+.header-minicart-quantity {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f8475f;
+  border-radius: 50px;
+  color: #ffffff;
 }

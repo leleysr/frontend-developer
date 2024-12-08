@@ -1,0 +1,29 @@
+.main-banner-wrapper {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main-banner-pagination {
+  bottom: 36px;
+}
+
+.main-banner-page {
+  width: 10px;
+  height: 10px;
+  outline: none;
+  background-color: #bdbdbd;
+  opacity: 1;
+}
+
+.main-banner-page:focus {
+  outline: none;
+}
+
+.main-banner-page:global(.is-active) {
+  background-color: #f8475f;
+  outline: none;
+  transform: none;
+}
