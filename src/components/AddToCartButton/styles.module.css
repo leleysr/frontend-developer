@@ -19,23 +19,3 @@
   color: #ffffff;
   margin: 8px 0 14px 0;
 }
-
-.add-to-cart-button-loader {
-  width: 16px;
-  height: 16px;
-  border: 5px solid #fff;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}

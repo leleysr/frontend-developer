@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCart } from "../../context/cartContext";
 import { CartData } from "../../types";
+import { Spinner } from "../Spinner/Spinner";
 import styles from "./styles.module.css";
 
 interface AddToCartButtonProps {
@@ -46,11 +47,7 @@ export function AddToCartButton({ productId }: AddToCartButtonProps) {
         onClick={(e) => handleAddToCart(e)}
         className={styles["add-to-cart-button"]}
       >
-        {isLoading ? (
-          <span className={styles["add-to-cart-button-loader"]}></span>
-        ) : (
-          "COMPRAR"
-        )}
+        {isLoading ? <Spinner></Spinner> : "COMPRAR"}
       </button>
     </div>
   );

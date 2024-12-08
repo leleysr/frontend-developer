@@ -3,7 +3,10 @@ import "@splidejs/react-splide/css";
 import styles from "./styles.module.css";
 
 interface MainBannerProps {
-  banners: string[];
+  banners: {
+    desktopImage: string;
+    mobileImage: string;
+  }[];
 }
 
 export function MainBanner({ banners }: MainBannerProps) {
@@ -41,11 +44,18 @@ export function MainBanner({ banners }: MainBannerProps) {
           {banners.map((banner, index) => {
             return (
               <SplideSlide key={index} className={styles["main-banner-slide"]}>
-                <img
-                  className={styles["main-banner-image"]}
-                  src={banner}
-                  alt="Main Banner"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcSet={banner.mobileImage}
+                  />
+
+                  <img
+                    className={styles["main-banner-image"]}
+                    src={banner.desktopImage}
+                    alt="Main Banner"
+                  />
+                </picture>
               </SplideSlide>
             );
           })}

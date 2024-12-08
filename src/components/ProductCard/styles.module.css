@@ -84,3 +84,10 @@
   color: #7a7a7a;
   margin: 4px 0 0;
 }
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .product-card-wrapper {
+    max-width: unset;
+  }
+}

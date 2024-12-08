@@ -55,3 +55,36 @@
 .product-shelf-arrow:focus {
   outline: none;
 }
+
+.product-shelf-pagination {
+  bottom: 0px;
+}
+
+.product-shelf-splide-track {
+  padding-bottom: 20px;
+}
+
+.product-shelf-page {
+  width: 10px;
+  height: 10px;
+  outline: none;
+  background-color: #bdbdbd;
+  opacity: 1;
+}
+
+.product-shelf-page:focus {
+  outline: none;
+}
+
+.product-shelf-page:global(.is-active) {
+  background-color: #f8475f;
+  outline: none;
+  transform: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .product-shelf-wrapper {
+    padding: 16px;
+  }
+}

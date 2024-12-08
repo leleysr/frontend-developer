@@ -6,6 +6,11 @@
   margin: 0 auto;
 }
 
+.main-banner-image {
+  width: 100%;
+  height: auto;
+}
+
 .main-banner-pagination {
   bottom: 36px;
 }
@@ -26,4 +31,10 @@
   background-color: #f8475f;
   outline: none;
   transform: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-banner-pagination {
+    bottom: 12px;
+  }
 }

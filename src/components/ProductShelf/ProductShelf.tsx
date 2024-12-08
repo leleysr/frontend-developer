@@ -16,14 +16,14 @@ const splideOptions = {
   breakpoints: {
     1024: {
       perPage: 2,
-      pagination: false,
-      arrows: true,
+      pagination: true,
+      arrows: false,
     },
   },
   drag: true,
   classes: {
-    pagination: `splide__pagination splide__pagination--ltr `,
-    page: `splide__pagination__page `,
+    pagination: `splide__pagination splide__pagination--ltr ${styles["product-shelf-pagination"]}`,
+    page: `splide__pagination__page ${styles["product-shelf-page"]}`,
     arrows: `splide__arrows your-class-arrows ${styles["product-shelf-arrows"]}`,
     arrow: `splide__arrow your-class-arrow ${styles["product-shelf-arrow"]}`,
     prev: `splide__arrow--prev your-class-prev ${styles["product-shelf-arrow-prev"]}`,
@@ -56,7 +56,7 @@ export function ProductShelf() {
             options={splideOptions}
             hasTrack={false}
           >
-            <SplideTrack>
+            <SplideTrack className={styles["product-shelf-splide-track"]}>
               {products.map((product) => {
                 return (
                   <SplideSlide key={product.productId}>
