@@ -19,6 +19,7 @@ export function ProductCard({ product }: ProductCardProps) {
           className={styles["product-card-image"]}
           src={product.imageUrl}
           alt={`Imagem do produto: ${product.productName}`}
+          loading="lazy"
         />
         {product.listPrice &&
           product.price &&
@@ -27,6 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
               className={styles["product-card-off-flag"]}
               src={flagOff}
               alt="Flag produto com desconto"
+              loading="lazy"
             />
           )}
 
@@ -35,9 +37,19 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className={styles["product-card-stars"]}>
           {Array.from({ length: 5 }, (_, index) =>
             index < product.stars ? (
-              <img src={filledStar} alt="Estrela preenchida" key={index} />
+              <img
+                src={filledStar}
+                alt="Estrela preenchida"
+                key={index}
+                loading="lazy"
+              />
             ) : (
-              <img src={emptyStar} alt="Estrela vazia" key={index} />
+              <img
+                src={emptyStar}
+                alt="Estrela vazia"
+                key={index}
+                loading="lazy"
+              />
             )
           )}
         </p>

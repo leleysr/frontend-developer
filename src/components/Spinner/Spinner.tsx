@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 
 interface SpinnerProps {
-  color: string;
+  color?: string;
 }
 
 export function Spinner({ color }: SpinnerProps) {
