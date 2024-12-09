@@ -1,0 +1,93 @@
+.product-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 216px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.product-card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 216px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.product-card-image {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.product-card-off-flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.product-card-name {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.37px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 7px 0 0;
+}
+
+.product-card-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 12px 0 0;
+}
+
+.product-card-list-price {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.37px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 7px 0 0;
+}
+
+.product-card-price {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.55px;
+  text-align: center;
+  color: #000;
+  margin: 4px 0 0;
+}
+
+.product-card-installments {
+  font-family: "Nunito";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 4px 0 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .product-card-wrapper {
+    max-width: unset;
+  }
+}

@@ -1,0 +1,166 @@
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 16px 26px 24px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  background-color: #ffffff;
+  padding: 16px 0;
+}
+
+.header-hamburguer-trigger {
+  display: none;
+}
+
+.header-logo-link {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.header-logo {
+  width: 100%;
+  height: auto;
+  max-width: 181px;
+}
+
+.header-search-bar-mobile-row {
+  display: none;
+}
+
+.header-search-bar-wrapper {
+  width: 100%;
+  max-width: 718px;
+  height: 100%;
+  position: relative;
+}
+
+.header-search-bar-wrapper::after {
+  content: url("../../assets/search-icon.svg");
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+.header-search-bar {
+  width: 100%;
+  max-width: 718px;
+
+  font-family: "Nunito";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.73px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #7a7a7a;
+  outline: none;
+  color: #7a7a7a;
+  padding-right: 24px;
+}
+
+.header-user-actions-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
+
+.header-minicart-wrapper,
+.header-profile-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header-profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.header-profile-label {
+  margin: 0;
+
+  font-family: "Nunito";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.73px;
+  text-align: left;
+  color: #7a7a7a;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.header-profile-image,
+.header-minicart-image {
+  width: 18px;
+  height: 18px;
+}
+
+.header-minicart-quantity {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f8475f;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 8px 16px 12px;
+  }
+
+  .header-wrapper {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .header-hamburguer-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+  }
+
+  .header-logo {
+    max-width: 108px;
+  }
+
+  .header-search-bar-wrapper,
+  .header-profile-wrapper {
+    display: none;
+  }
+
+  .header-search-bar-mobile-row {
+    width: 100%;
+    height: 100%;
+    margin: 16px 0 0;
+  }
+
+  .header-search-bar-mobile-row .header-search-bar-wrapper {
+    display: initial;
+  }
+}

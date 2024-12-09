@@ -1,0 +1,176 @@
+.newsletter-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 12px 36px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.newsletter-title-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.newsletter-title {
+  font-family: "Lato";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+.newsletter-form-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-form {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.newsletter-input-wrapper {
+  position: relative;
+}
+
+.newsletter-input-wrapper input {
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  padding: 17px 16px;
+  outline: none;
+  min-width: 280px;
+}
+
+.newsletter-input-wrapper input.input-invalid {
+  border: 1px solid #d7182a;
+}
+
+.newsletter-invalid-feedback {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
+  color: #e74c3c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.newsletter-submit-button {
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  padding: 8px;
+  width: 140px;
+  height: 48px;
+}
+
+/* Sucess Message */
+.newsletter-sucess-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 24px 12px 36px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.newsletter-sucess-message-title {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.newsletter-sucess-message {
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.newsletter-sucess-back-button {
+  margin-top: 16px;
+  width: 328px;
+  height: 48px;
+
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 5px;
+}
+/*  */
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .newsletter-wrapper {
+    padding: 24px 16px 16px;
+  }
+
+  .newsletter-title-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .newsletter-input-wrapper input {
+    min-width: 288px;
+  }
+
+  .newsletter-submit-button-wrapper,
+  .newsletter-submit-button {
+    width: 100%;
+    height: 100%;
+    min-height: 48px;
+    max-width: 288px;
+  }
+
+  .newsletter-invalid-feedback {
+    top: calc(100% + 3px);
+  }
+}
