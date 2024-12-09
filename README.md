@@ -5,10 +5,12 @@ Este projeto é um template de página inicial (Home) para uma loja online, dese
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca para criação da interface do usuário.
+- **TypeScript**: Para tipagem estática no desenvolvimento.
 - **Vite**: Ferramenta de build e desenvolvimento rápida para projetos React.
 - **Jest**: Framework de testes para garantir a qualidade do código.
 - **Formik**: Biblioteca para gerenciar formulários em React, usada para validar o schema do formulário.
 - **Yup**: Usada junto ao Formik para validação do esquema do formulário.
+- **ESLint**: Para manter a qualidade e consistência do código.
 
 ## Componentes do Template
 
@@ -98,6 +100,52 @@ yarn test-clear
 ```
 
 Isso pode ser útil se os testes não estiverem funcionando corretamente por conta de cache antigo.
+
+### Gerar o build de produção
+
+Para gerar o build de produção, execute o seguinte comando:
+
+```bash
+npm run build
+```
+
+Ou com `yarn`:
+
+```bash
+yarn build
+```
+
+O build será gerado no diretório `dist`.
+
+### Visualizar o build de produção
+
+Para pré-visualizar o build de produção localmente, utilize o comando:
+
+```bash
+npm run preview
+```
+
+Ou com `yarn`:
+
+```bash
+yarn preview
+```
+
+Isso iniciará um servidor local para que você visualize o build gerado.
+
+### Lint do código
+
+Para verificar e corrigir problemas no código usando o ESLint, utilize o comando:
+
+```bash
+npm run lint
+```
+
+Ou com `yarn`:
+
+```bash
+yarn lint
+```
 
 ## Dúvidas
 
