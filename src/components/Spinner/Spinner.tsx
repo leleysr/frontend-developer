@@ -1,5 +1,19 @@
 import styles from "./styles.module.css";
 
-export function Spinner() {
-  return <span className={styles["spinner-loader"]}></span>;
+interface SpinnerProps {
+  color: string;
+}
+
+export function Spinner({ color }: SpinnerProps) {
+  return (
+    <span
+      role="status"
+      aria-label="Carregando..."
+      className={styles["spinner-loader"]}
+      style={{
+        borderColor: color ? color : "",
+        borderBottomColor: "transparent",
+      }}
+    ></span>
+  );
 }

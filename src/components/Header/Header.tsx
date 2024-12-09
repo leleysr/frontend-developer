@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import hamburguerIcon from "../../assets/hamburguer-icon.svg";
 import logo from "../../assets/logo.svg";
 import minicartIcon from "../../assets/minicart-icon.svg";
@@ -8,6 +9,10 @@ import styles from "./styles.module.css";
 export function Header() {
   const { cart } = useCart();
 
+  const minicartQuantity = useMemo(() => {
+    return cart.reduce((total, item) => total + (item.quantity ?? 0), 0);
+  }, [cart]);
+
   return (
     <header className={styles["header"]}>
       <div className={styles["header-wrapper"]}>
@@ -15,7 +20,7 @@ export function Header() {
           <img
             className={styles["header-hamburguer-image"]}
             src={hamburguerIcon}
-            alt=""
+            alt="Menu trigger icon"
           />
         </button>
 
@@ -56,7 +61,7 @@ export function Header() {
               alt="Minicart icon"
             />
             <p className={styles["header-minicart-quantity"]}>
-              {cart?.length ?? 0}
+              {minicartQuantity}
             </p>
           </div>
         </div>

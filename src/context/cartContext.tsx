@@ -1,10 +1,4 @@
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 import { loadCartDataFromLocalStorage } from "../helpers/loadCartDataFromLocalStorage";
 import { CartData } from "../types";
 
@@ -21,10 +15,6 @@ const CartContext = createContext<CartProviderData | undefined>(undefined);
 // Provedor do contexto
 export function CartProvider({ children }: CartProviderProps) {
   const [cart, setCart] = useState<CartData[]>(loadCartDataFromLocalStorage());
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
 
   return (
     <CartContext.Provider value={{ cart, setCart }}>

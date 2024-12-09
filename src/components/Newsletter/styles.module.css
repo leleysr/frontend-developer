@@ -169,4 +169,8 @@
     min-height: 48px;
     max-width: 288px;
   }
+
+  .newsletter-invalid-feedback {
+    top: calc(100% + 3px);
+  }
 }

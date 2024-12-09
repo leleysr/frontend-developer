@@ -3,6 +3,7 @@ import "@splidejs/react-splide/css";
 import { useEffect, useState } from "react";
 import { Product } from "../../types";
 import { ProductCard } from "../ProductCard/ProductCard";
+import { Spinner } from "../Spinner/Spinner";
 import styles from "./styles.module.css";
 
 const splideOptions = {
@@ -67,7 +68,9 @@ export function ProductShelf() {
             </SplideTrack>
           </Splide>
         ) : (
-          <></>
+          <div className={styles["product-shelf-spinner-wrapper"]}>
+            <Spinner color="#000"></Spinner>
+          </div>
         )}
       </div>
     </div>

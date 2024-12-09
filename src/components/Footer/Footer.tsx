@@ -18,7 +18,7 @@ export function Footer() {
               <img
                 className={styles["footer-links-contact-email-icon"]}
                 src={emailIcon}
-                alt=""
+                alt="Email icon"
               />
               <p className={styles["footer-links-contact-email-label"]}>
                 Entre em contato
@@ -31,7 +31,7 @@ export function Footer() {
               <img
                 className={styles["footer-links-contact-call-us-icon"]}
                 src={contactUs}
-                alt=""
+                alt="Fale conosco item"
               />
               <p className={styles["footer-links-contact-call-us-label"]}>
                 Fale com o nosso consultor online
@@ -66,7 +66,7 @@ export function Footer() {
           <img
             className={styles["footer-created-by-image"]}
             src={footerLogo}
-            alt=""
+            alt="logo icon footer"
           />
         </div>
       </div>

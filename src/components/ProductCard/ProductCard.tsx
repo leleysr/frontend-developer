@@ -26,7 +26,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <img
               className={styles["product-card-off-flag"]}
               src={flagOff}
-              alt=""
+              alt="Flag produto com desconto"
             />
           )}
 
@@ -35,9 +35,9 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className={styles["product-card-stars"]}>
           {Array.from({ length: 5 }, (_, index) =>
             index < product.stars ? (
-              <img src={filledStar} alt="" />
+              <img src={filledStar} alt="Estrela preenchida" key={index} />
             ) : (
-              <img src={emptyStar} alt="" />
+              <img src={emptyStar} alt="Estrela vazia" key={index} />
             )
           )}
         </p>
